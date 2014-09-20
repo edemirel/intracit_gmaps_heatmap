@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 
+# Test comment for git
 
 def create_app():
     app = Flask(__name__)
