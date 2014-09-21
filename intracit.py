@@ -2,12 +2,11 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 import datetime
 import cgitb
-import sys
+
 
 app = Flask(__name__)
 Bootstrap(app)
 cgitb.enable()
-sys.path.insert(0, "/usr/bin/espeak")
 
 
 @app.route("/")
@@ -22,13 +21,13 @@ def hello():
 
 
 @app.route("/test/")
-def sup():
+def test():
 
     return render_template('index.html')
 
 
 @app.route("/gmapstest/")
-def gsup():
+def gmapstest():
 
     return render_template('gmaps_test.html')
 
